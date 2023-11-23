@@ -1,0 +1,16 @@
+title: Apache Failed Login Attempt
+id: apache_failed_login
+description: Detects a failed login attempt in Apache logs.
+
+logsource:
+    category: web
+    product: apache
+
+detection:
+    condition: |
+        event_id: "authentication_failure"
+
+falsepositives:
+    - Normal user mistypes
+
+level: medium
