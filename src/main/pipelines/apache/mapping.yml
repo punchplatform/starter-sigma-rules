@@ -4,4 +4,4 @@ transformations:
 - id: mapping
   type: field_name_mapping
   mapping:
-    cs-uri-query: message
+    request: url.original

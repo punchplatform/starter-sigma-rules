@@ -1,0 +1,16 @@
+title: Apache suspicious admin paths
+id: 5a710c80-8a00-11ee-b9d1-0242ac120002
+description: Detects suspicious admin paths in Apache logs.
+logsource:
+    category: web
+    product: apache
+detection:
+    selection:
+        request:
+            - '/admin'
+            - '/wp-admin'
+            - '/phpmyadmin'
+    condition: selection
+falsepositives:
+    - Legitimate admin access
+level: high
