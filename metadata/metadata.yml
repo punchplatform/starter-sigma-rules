@@ -6,7 +6,7 @@ version: ${VERSION}
 artifact: ${ARTIFACT_ID}
 displayName: ${ARTIFACT_ID}
 createdAt: ${BUILD_TIMESTAMP}
-description: This package provides detection rules for pulsesecure
+description: This package provides sample sigma rules
 keywords:
   - Punch
   - Detection
@@ -20,7 +20,7 @@ readme: |
   ## Description
   
   This package provides a few sample rule you can try along with the 
-  start parser. Use it to test a complete configuration.   
+  start-parsers sample parser package. Use it to test a complete configuration.   
 
 changelog:
   - 1.0.0 initial release
