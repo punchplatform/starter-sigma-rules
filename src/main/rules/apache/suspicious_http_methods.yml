@@ -1,0 +1,14 @@
+title: Apache suspicious HTTP methods
+id: e20c1e6c-3ac4-4e38-9e6e-b61887adb0fe
+description: Detects Apache access logs with uncommon HTTP methods (DELETE or PATCH).
+logsource:
+    category: web
+    product: apache
+detection:
+    log:
+        - DELETE
+        - PATCH
+    condition: log
+falsepositives:
+    - Legitimate use of DELETE or PATCH methods
+level: high

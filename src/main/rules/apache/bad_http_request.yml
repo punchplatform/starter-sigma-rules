@@ -1,0 +1,14 @@
+title: Apache bad HTTP request
+id: cc285fb9-268c-457c-8ee5-a065d26bf43b
+description: Detects Apache access logs with HTTP status code 400 (Bad Request).
+logsource:
+  category: web
+  product: apache
+detection:
+  selection:
+    event.dataset: apache.access
+    http.response.status_code: 400
+  condition: selection
+falsepositives:
+  - Legitimate use of HTTP status code 400
+level: high

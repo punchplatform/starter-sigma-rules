@@ -1,5 +1,5 @@
 title: Apache suspicious admin paths
-id: 5a710c80-8a00-11ee-b9d1-0242ac120002
+id: 7e2ce055-aecb-4e14-aeef-c4ca14b3e068
 description: Detects suspicious admin paths in Apache logs.
 logsource:
     category: web
