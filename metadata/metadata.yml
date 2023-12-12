@@ -1,7 +1,7 @@
 # Punch Artifact Hub package metadata file
 type: punch-sigma-rules
 group: ${GROUP_ID}
-logo: https://punchplatform.com/wp-content/uploads/2020/01/logos_png_logo_punch_color2019_marge.png
+logo: punch_color
 version: ${VERSION}
 artifact: ${ARTIFACT_ID}
 displayName: ${ARTIFACT_ID}
